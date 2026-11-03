@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mina Wael Azmy | Frontend Developer</title>
+  <meta name="description" content="Portfolio of Mina Wael Azmy, a frontend developer and Computer Science student at Assiut University.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap">
+  <style>
+    :root {
+      --bg: #eef2f6;
+      --surface: #ffffff;
+      --ink: #14213d;
+      --muted: #5b6b82;
+      --accent: #2f6fed;
+      --line: #d5dde8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Manrope", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    header { padding: 80px 0 48px; }
+    h1 { font-size: clamp(2.4rem, 8vw, 4rem); font-weight: 800; line-height: 1.1; }
+    .role { margin-top: 12px; font-size: 1.25rem; color: var(--accent); font-weight: 600; }
+    .intro { margin-top: 20px; max-width: 60ch; color: var(--muted); }
+
+    section { padding: 32px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 1.4rem; margin-bottom: 16px; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+    .skills li {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-weight: 600;
+    }
+
+    .project {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .project h3 { font-size: 1.1rem; }
+    .project p { margin: 8px 0 12px; color: var(--muted); }
+
+    .contact a { display: block; margin-bottom: 6px; font-weight: 600; }
+    footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Mina Wael Azmy</h1>
+      <p class="role">Frontend Developer</p>
+      <p class="intro">
+        I am a third-year student at the Faculty of Computers and Information,
+        Assiut University (graduating 2028). I build web pages with HTML, CSS
+        and JavaScript, and I am looking for my first internship.
+      </p>
+    </header>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="project">
+        <h3>Personal portfolio website</h3>
+        <p>
+          The page you are reading. A one-page, responsive site built with
+          HTML, CSS and JavaScript, and hosted on GitHub Pages.
+        </p>
+        <a href="https://github.com/mina-programming/portfolio">View the code on GitHub</a>
+      </article>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <a href="mailto:minawael2006m@gmail.com">minawael2006m@gmail.com</a>
+      <a href="https://github.com/mina-programming">github.com/mina-programming</a>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Mina Wael Azmy. Assiut, Egypt.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Show the current year in the footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
